@@ -1,0 +1,22 @@
+<%= form_with(model: shufle) do |form| %>
+  <% if shufle.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(shufle.errors.count, "error") %> prohibited this shufle from being saved:</h2>
+
+      <ul>
+        <% shufle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :shufle_name, style: "display: block" %>
+    <%= form.text_field :shufle_name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Shufle < ApplicationRecord
+end

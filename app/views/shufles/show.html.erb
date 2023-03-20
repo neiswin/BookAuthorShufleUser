@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @shufle %>
+
+<div>
+  <%= link_to "Edit this shufle", edit_shufle_path(@shufle) %> |
+  <%= link_to "Back to shufles", shufles_path %>
+
+  <%= button_to "Destroy this shufle", @shufle, method: :delete %>
+</div>

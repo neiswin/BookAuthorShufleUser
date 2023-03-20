@@ -1,0 +1,2 @@
+module ShuflesHelper
+end
